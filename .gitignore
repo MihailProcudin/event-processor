@@ -1,0 +1,23 @@
+# Builds
+/bin/
+/build/
+/dist/
+*.zip
+*.out
+
+# Go
+# Keep go.sum tracked for reliable builds
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Terraform
+.terraform/
+terraform.tfstate*
+
+# Local env
+
+# VSCode
+.vscode/
