@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-lambda-go v1.49.0
 	github.com/aws/aws-sdk-go-v2/config v1.31.1
 	github.com/aws/aws-sdk-go-v2/service/dynamodb v1.48.0
-	github.com/aws/aws-sdk-go-v2/service/sqs v1.34.0
+	github.com/aws/aws-sdk-go-v2/service/sqs v1.41.1
 	github.com/google/uuid v1.6.0
 	github.com/xeipuuv/gojsonschema v1.2.0
 )
