@@ -29,7 +29,7 @@ Two AWS Lambdas are provided:
 ## Prerequisites
 
 - Terraform >= 1.6
-- Go >= 1.22 (for local builds/tests)
+- Go >= 1.24 (for local builds/tests)
 - AWS CLI v2
 - make, zip
 
