@@ -69,6 +69,7 @@ resource "aws_sqs_queue" "events_fifo" {
   name                        = "${local.name}-events.fifo"
   fifo_queue                  = true
   content_based_deduplication = true
+  visibility_timeout_seconds  = 90
   redrive_policy = jsonencode({
     deadLetterTargetArn = aws_sqs_queue.events_fifo_dlq.arn
     maxReceiveCount     = 5
@@ -134,7 +135,6 @@ resource "aws_lambda_event_source_mapping" "sqs_trigger" {
   function_name    = aws_lambda_function.processor.arn
   enabled          = true
   batch_size       = 1
-  visibility_timeout_seconds = 30
 }
 
 # Seed Lambda to upload schemas and publish a test event when invoked
